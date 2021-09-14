@@ -1,0 +1,141 @@
+* {
+			transition: all 0.5s;
+		}
+		body {
+			font: 16px Arial;	
+		}
+		main {
+			margin: 0px auto;
+			width: 1280px;
+		}
+		header div.logo {
+			background: url(../img/logo.png) no-repeat center;
+			background-size: cover;
+			height: 690px;
+		}
+		section.boxes {
+			margin-top: 40px;
+		}
+		section.boxes div {
+			display: inline-block;
+			height: 280px;
+			margin-right: 28px;
+			position: relative;
+			width: 280px;
+		}
+		section.boxes div:first-child {
+			margin-left: 28px;
+		}
+		section.boxes div:last-child {
+			margin-right: 0px;
+		}
+		section.boxes div:nth-child(1n) {
+			background: url(../img/1.jfif) no-repeat center;
+			background-size: cover;
+		}
+		section.boxes div:nth-child(2n) {
+			background: url(../img/2.jpg) no-repeat center;
+			background-size: cover;
+		}
+		section.boxes div p {
+			background-color: rgba(0, 0, 0, .6);
+			color: rgba(255,255,255, .8);
+			bottom: 0px;
+			font-size: 1.4em;
+			height: 20px;
+			margin: 0px;
+			padding: 20px;
+			position: absolute;
+			text-align: center;
+			width: 240px;
+			transition: all 0.4s;
+		}
+		section.boxes div:hover {
+			cursor: pointer;
+		}
+		section.boxes div:hover p {
+			height: 60px;
+		}
+		footer {
+			margin-top: 40px;
+		}
+		footer article {
+			border: 1px dashed rgba(0,0,0,.2);
+			height: 280px;
+			position: relative;
+			margin: 50px 28px;
+		}
+		footer article figure {
+			background: url(../img/3.jpg) no-repeat;
+			background-size: cover;
+			height: 280px;
+			margin: 0px;
+			width: 280px;
+		}
+		footer article.art1 figure {
+			background-position: right center;
+		}
+		footer article figure,
+		footer article div {
+			display: inline-block;
+			vertical-align: top;
+		}
+		footer article div {
+			margin-left: 28px;
+			width: 600px;
+		}
+		footer article div h2 {
+			color: rgba(0,0,0,.8);
+			font-size: 2em;
+			margin: 20px 0px;
+		}
+		footer article div p {
+			color: rgba(0,0,0,.5);
+			line-height: 1.4em;
+			text-align: justify;
+		}
+		/* - - - - - - - - - - - - - - - - - - - - - */
+		@media (max-width: 1290px) {
+			main {
+				width: 680px;
+			}
+			header div.logo {
+				background-size: 120%;
+			}
+			section.boxes div {
+				margin: 28px;
+			}
+			footer article div {
+				width: 280px;
+			}
+			footer article div h2 {
+				font-size: 1.4em;
+			}
+			footer article div p {
+				overflow: scroll;
+				height: 180px;
+			}
+		}
+		/* - - - - - - - - - - - - - - - - - - - - - */
+		@media (max-width: 690px) {
+			main {
+				width: 480px;
+			}
+			section.boxes div {
+				display: block;
+				margin: 28px auto !important;
+			}
+			footer article {
+				height: 560px;
+				margin: 40px auto;
+				width: 280px;
+			}
+			footer article figure,
+			footer article div {
+				display: block;
+			}
+			footer article div {
+				margin-left: 0px;
+				width: 280px;
+			}
+		}
